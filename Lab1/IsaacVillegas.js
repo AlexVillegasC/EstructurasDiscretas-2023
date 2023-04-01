@@ -18,3 +18,4 @@ function SumaGaussiana(n) {
 
 console.log(SumaGaussiana(100));
 
+

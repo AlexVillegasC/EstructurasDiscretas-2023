@@ -1,6 +1,6 @@
 /**
- *Complejidad temporal o(n). 
- * complejidad espacial o( 1)
+ *Complejidad temporal o(1). 
+ * complejidad espacial o(n).
  * ggg
  */
 //Recursos

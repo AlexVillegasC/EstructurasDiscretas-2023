@@ -1,5 +1,5 @@
 /**
- *Complejidad temporal o(1) 
+ *Complejidad temporal o(n) 
  * complejidad espacial o( 1)
  * 
  */

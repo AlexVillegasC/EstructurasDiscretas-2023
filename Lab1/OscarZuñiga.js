@@ -19,4 +19,3 @@ function SumaGaussiana(n) // es O(1)
 }
 
 console.log(SumaGaussiana(100));
-// adrinahh

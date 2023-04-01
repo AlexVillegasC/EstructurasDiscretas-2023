@@ -11,6 +11,7 @@ function SumarNumerosDesdeCero(n)
     return counter;
 }
 
+
 console.log(SumarNumerosDesdeCero(100));
 
 function SumaGaussiana(n) {

@@ -5,7 +5,7 @@ function linearSerch(arreglo, clave){
      }
        
    } 
-   return =1;
+   return 1;
 
 }
 

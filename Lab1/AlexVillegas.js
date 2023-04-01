@@ -1,5 +1,4 @@
-// Lab 1 - Determinar la complejidad espacio/ tiempo..
-
+// Lab 1 - Determinar la complejidad espacio/ tiempo.
 function SumarNumerosDesdeCero(n)
 {
     let counter = 0;

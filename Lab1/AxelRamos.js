@@ -1,4 +1,4 @@
-function SumarNumerosDesdeCero(n)  //s O(n)/
+function SumarNumerosDesdeCero(n)  //s O(n)/ //hola
 {
     let counter = 0;
     for(let i = 0; i <= n; i++)

@@ -1,7 +1,7 @@
 /**
- * Complejidad Temporal -> o( n)
+ * Complejidad Temporal -> o( n).
  * 
- * Complejidad Espacial 0(1 )
+ * Complejidad Espacial 0(1 ).
  */
 
 

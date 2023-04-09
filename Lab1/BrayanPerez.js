@@ -17,9 +17,4 @@ function SumaGaussiana(n) // es O(1)
 { 
     return (n * (n + 1)) / 2;
 }
-
-console.log(SumaGaussiana(100));
-
-
-
-//Lab 2 
+//brayan tarea

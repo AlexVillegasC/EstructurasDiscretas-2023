@@ -1,4 +1,5 @@
-function SumarNumerosDesdeCero (n)  
+// Lab 1 - Determinar la complejidad espacio/ tiempo.
+function SumarNumerosDesdeCero(n)
 {
     let counter = 0;
     for(let i = 0; i <= n; i++)
@@ -16,6 +17,4 @@ function SumaGaussiana(n) {
 }
 
 console.log(SumaGaussiana(100));
-
-//holaaa
 

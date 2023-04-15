@@ -1,7 +1,7 @@
 /**
- *Complejidad temporal o(1) 
- * complejidad espacial o( 1)
- * 
+ *Complejidad temporal o(1). 
+ * complejidad espacial o(n).
+ * ggg
  */
 //Recursos
 
@@ -14,4 +14,4 @@ if(n=== 0 || n=== 1){
     return n* factorial(n-1);
 }
 
-}
+} 

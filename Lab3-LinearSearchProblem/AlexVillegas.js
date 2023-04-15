@@ -23,6 +23,6 @@ const libros = [
 // }
 
 // Ejemplo de uso
-const idBuscado = 457;
-const resultado = buscarLibroPorId(libros, idBuscado);
-console.log(resultado);  // Salida: "1984"
+// const idBuscado = 457;
+// const resultado = buscarLibroPorId(libros, idBuscado);
+// console.log(resultado);  // Salida: "1984"

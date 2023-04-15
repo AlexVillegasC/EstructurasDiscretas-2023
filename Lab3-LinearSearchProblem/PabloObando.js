@@ -14,5 +14,6 @@ const libros = [
     }
     return "Lo siento, el libro solicitado no está disponible en la tienda.";
   }
-  
-  console.log(buscarLibroPorId(libros,501));
+  const idBuscado = 457;
+  console.log(buscarLibroPorId(libros,idBuscado));
+  console.log(resultado);  // Salida: "1984

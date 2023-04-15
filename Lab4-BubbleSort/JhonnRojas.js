@@ -15,6 +15,6 @@ function SortGrades(arr) {
     return arr;
   }
   
-  Grades = [88, 97, 75, 83, 72, 70, 90, 79, 84];
+  Grades = [99, 89, 100, 91, 97,60, 28, 15, 70];
   const sortedArray = SortGrades(Grades);
   console.log("Mejores 5 calificaciones:", sortedArray.slice(0, 5));

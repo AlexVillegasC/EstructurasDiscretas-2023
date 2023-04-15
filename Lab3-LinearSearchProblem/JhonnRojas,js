@@ -8,5 +8,14 @@ const libros = [
 ]; 
 // const libros= [];
 // = ["principito 105" , " cien años de soledad 210", " don quijote de la mancha 304" ,"1984 457" ," un mundo feliz 501"]
-console. log (libros);
- 
+function buscarLibroPorId(libros, idSolicitado){
+    for (let indice = 0 ; indice <libros.length; indice++) {
+        if (libros[indice].id === idSolicitado) {
+            // Retornar el Nombre del libro.
+            return libros[indice].titulo;
+         }
+     } 
+    return "lo siento, el libro solitado no está disponible en la tienda.";
+}
+
+console.log("el indice está en la posicióny: "+buscarLibroPorId(libros, 501));

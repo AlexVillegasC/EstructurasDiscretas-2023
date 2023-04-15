@@ -13,16 +13,16 @@ const libros = [
     // ...
 ];
 
-function buscarLibroPorId(libros, idSolicitado) {
-    for () {
-        if () {
-            // Retornar el Nombre del Libro.
-        }
-    }
-    // Retornar un Mensaje que dice: "Lo siento, el libro solicitado no está disponible en la tienda.";
-}
+// function buscarLibroPorId(libros, idSolicitado) {
+//     for () {
+//         if () {
+//             // Retornar el Nombre del Libro.
+//         }
+//     }
+//     // Retornar un Mensaje que dice: "Lo siento, el libro solicitado no está disponible en la tienda.";
+// }
 
 // Ejemplo de uso
-const idBuscado = 457;
-const resultado = buscarLibroPorId(libros, idBuscado);
-console.log(resultado);  // Salida: "1984"
+// const idBuscado = 457;
+// const resultado = buscarLibroPorId(libros, idBuscado);
+// console.log(resultado);  // Salida: "1984"

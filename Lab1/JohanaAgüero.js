@@ -1,4 +1,4 @@
-function SumarNumerosDesdeCero(n)  //s O(n)/
+function SumarNumerosDesdeCero(n)  /s O(n)/
 {
     let counter = 0;
     for(let i = 0; i <= n; i++)
@@ -19,7 +19,3 @@ function SumaGaussiana(n) // es O(1)
 }
 
 console.log(SumaGaussiana(100));
-
-
-
-//Lab 2 

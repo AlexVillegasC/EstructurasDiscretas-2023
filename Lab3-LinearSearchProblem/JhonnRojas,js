@@ -18,4 +18,4 @@ function buscarLibroPorId(libros, idSolicitado){
     return "lo siento, el libro solitado no está disponible en la tienda.";
 }
 
-console.log("el indice está en la posicióny: "+buscarLibroPorId(libros, 501));
+console.log("el indice está en la posicióny: "+buscarLibroPorId(libros, 105));

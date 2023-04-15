@@ -1,3 +1,8 @@
+const libroBuscado = buscarLibroPorId(304);
+console.log(libroBuscado); // {id: 304, titulo: "Don Quijote de la Mancha"}
+
+
+
 
 function buscarLibroPorId(id) {
     for (let i = 0; i < libros.length; i++) {
@@ -9,5 +14,3 @@ function buscarLibroPorId(id) {
   }
 
   
-  const libroBuscado = buscarLibroPorId(304);
-console.log(libroBuscado); // {id: 304, titulo: "Don Quijote de la Mancha"}

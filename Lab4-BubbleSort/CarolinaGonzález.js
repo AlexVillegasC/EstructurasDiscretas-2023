@@ -1,6 +1,6 @@
 const calificaciones = [88, 52, 43, 23, 19, 92, 4, 83, 34, 100];
 
-// Ordenar las calificaciones utilizando el algoritmo Bubble Sort
+// Ordenar las calificaciones utilizando el algoritmo Bubble Sort.
 for (let i = 0; i < calificaciones.length - 1; i++) {
   for (let j = 0; j < calificaciones.length - i - 1; j++) {
     if (calificaciones[j] < calificaciones[j + 1]) {

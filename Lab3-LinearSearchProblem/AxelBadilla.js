@@ -6,23 +6,13 @@ const libros = [
     {id: 501, titulo: "Un mundo feliz"},
 ];
 
-function linearSearch(titulo, ID) {
-    for (let titulo = 0; titulo < ID.lenght; titulo++) {
-        if (arreglo[titulo] === ID) {
-            return titulo;
+ function buscarLibroPorId(libros, idSolicitado) { 
+     for ( indice = 0 ; indice < libros.length; indice++) {
+        if (libros[indice].id === idSolicitado) {
+            return libros[indice].titulo;
         }
+     }
+     return "no encontrado";
+    
     }
-    return titulo;
-}
-
-let myArray = [105,210,304,457,501];
-console.log("El libro es: "+linearSearch(myArray, 304));
-
-// function buscarLibroPorId(libros, idSolicitado) {
-//     for () {
-//         if () {
-//             // Retornar el Nombre del Libro.
-//         }
-//     }
-//     // Retornar un Mensaje que dice: "Lo siento, el libro solicitado no está disponible en la tienda.";
-// }
+    console.log(buscarLibroPorId(libros, 210));

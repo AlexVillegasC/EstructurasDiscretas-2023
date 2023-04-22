@@ -15,4 +15,4 @@ if(indice !== -1){
   } else {
     console.log(`El invitado con el disfraz número ${objdf} no se encontró en la lista.`);
   }
-// El invitado con el disfraz número 12 se encuentra en el índice 4 de la lista.
+// El invitado con el disfraz número 30 se encuentra en el índice 3 de la lista.

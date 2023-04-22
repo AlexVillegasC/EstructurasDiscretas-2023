@@ -67,6 +67,20 @@ class Stack {
   console.log(isHTMLBalanced(html3)); // false
   
 
+  const html4 = "<div><ul><span></span><p></p></ul></div>";
+  console.log(isHTMLBalanced(html4)); // true
+
+  const html15 = "<table><li><p></p><li><table>" 
+  console.log(isHTMLBalanced(html15)); // false
+  
+  const html16 = "<div><ol><ul><p></p></ul></ol></div>"
+  console.log(isHTMLBalanced(html16)); // True
+  
+  // Complejidad 0(n)
+  
+  
+  
+  
   // Haslo tu mismo!,
   // investiga sobre otras etiquetas HTML y (abajo) has la prueba con 3 más, haz ambos casos 
   // 1. Etiquetas estén bien cerradas.

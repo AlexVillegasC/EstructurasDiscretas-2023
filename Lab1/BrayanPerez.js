@@ -1,5 +1,4 @@
-
-function SumarNumerosDesdeCero (n)  
+function SumarNumerosDesdeCero(n)  //s O(n)/
 {
     let counter = 0;
     for(let i = 0; i <= n; i++)
@@ -12,8 +11,10 @@ function SumarNumerosDesdeCero (n)
 
 console.log(SumarNumerosDesdeCero(100));
 
-function SumaGaussiana(n) {
+
+
+function SumaGaussiana(n) // es O(1)
+{ 
     return (n * (n + 1)) / 2;
 }
-
-console.log(SumaGaussiana(100));
+//brayan tarea

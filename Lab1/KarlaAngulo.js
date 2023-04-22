@@ -1,4 +1,4 @@
-// Lab 1 - Determinar la complejidad espacio/ tiempo de:
+// Lab 1 - Determinar la complejidad espacio/ tiempo de:ttt
 
 function SumarNumerosDesdeCero(n) //Complejidad espacio/tiempo: O(n)
 {

@@ -1,6 +1,6 @@
 // Lab 1 - Determinar la complejidad espacio/ tiempo de:
 
-function SumarNumerosDesdeCero(n) //La complejidad espacio/tiempo es O(n)
+function SumarNumerosDesdeCero(n)
 {
     let counter = 0;
     for(let i = 0; i <= n; i++)
@@ -12,10 +12,14 @@ function SumarNumerosDesdeCero(n) //La complejidad espacio/tiempo es O(n)
 }
 
 console.log(SumarNumerosDesdeCero(100));
-///////////////////////////////////////////////////////////////
 
+function SumaGaussiana(n) {
+    return (n * (n + 1)) / 2;
+}
 
-function SumaGaussiana(n) //La complejidad espacio/tiempo es O(1)
+console.log(SumaGaussiana(100));
+
+function SumaGaussiana(n) // es O(1)
 { 
     return (n * (n + 1)) / 2;
 }

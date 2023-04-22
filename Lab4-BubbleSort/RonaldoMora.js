@@ -1,3 +1,6 @@
+// complejidad temporal o(n^2)
+// complejidad espacial o(1) 
+
 function SortGrades(arr) {
   let swapped;
 

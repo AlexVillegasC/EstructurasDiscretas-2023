@@ -59,13 +59,19 @@ class Stack {
 
   const html1 = "<html><head><title>Prueba</title></head></html>";
   console.log(isHTMLBalanced(html1)); // true
-  
+
   const html2 = "<html><head><title>Prueba</title></head><body><p>Esto es una prueba</body></html>";
   console.log(isHTMLBalanced(html2)); // false
-  
-  const html3 = "<html><head><title>Prueba</title></head><body><p>Esto es una prueba</p></body>";
-  console.log(isHTMLBalanced(html3)); // false
-  
-  const html4 = "<html><head><title>Prueba</title></head></p>Esto es una prueba</p></body>";
-  console.log(isHTMLBalanced(html3)); // false
+
+  const html7 = "<html><head><title>Prueba</title></head><body><p>Esto es una prueba</p></body>";
+  console.log(isHTMLBalanced(html7)); // 
+
+  const html8 = "<html><head><div><title>Prueba</title></div></head><body><p>Esto es una prueba</p></body>";
+  console.log(isHTMLBalanced(html8)); // True
+
+  const html4 = "<html><head><title>Prueba</title></head><body><p>Esto es una prueba</p></body>";
+  console.log(isHTMLBalanced(html4)); // false  
+
+  const html5 = "<html><head><a><title>Prueba</title><a></head><body><p>Esto es una prueba</p></body>";
+  console.log(isHTMLBalanced(html5)); // false
   // el tipo de complejidada es (On)

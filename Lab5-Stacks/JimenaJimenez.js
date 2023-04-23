@@ -87,5 +87,6 @@ class Stack {
   // 2. Etiquetas mal cerradas.
   // 3. Escribe la complejidad del algoritmo isHTMLBalanced para el peor de los casos. 
   
+  
 
   /////////// Complejidad 0(N)

@@ -53,7 +53,7 @@ class Stack {
   
                      }
   
-                     // Verifica si todas las etiquetas se cerraron correctamente
+                     // Verifica si todas las etiquetas se cerraron correctamente.
                      return stack.isEmpty();
                      }
   

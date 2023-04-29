@@ -1,10 +1,6 @@
-const calificaciones = [88, 52, 43, 23, 19, 92, 4, 83, 34, 100];
+const calificaciones = [89, 54, 49, 20, 18, 90, 5, 80, 33, 100];
 
-<<<<<<< HEAD
 // Ordenar las calificaciones utilizando el algoritmo Bubble Sort
-=======
-// Ordenar las calificaciones utilizando el algoritmo Bubble Sort.
->>>>>>> fa4d43b49a9034e1af020e7d81db0523ee7120b3
 for (let i = 0; i < calificaciones.length - 1; i++) {
   for (let j = 0; j < calificaciones.length - i - 1; j++) {
     if (calificaciones[j] < calificaciones[j + 1]) {
@@ -17,12 +13,7 @@ for (let i = 0; i < calificaciones.length - 1; i++) {
 }
 
 // Mostrar las cinco calificaciones más altas
-console.log("Las cinco calificaciones más altas son:");
+console.log("Las Notas más altas son:");
 for (let i = 0; i < 5; i++) {
   console.log(calificaciones[i]);
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> fa4d43b49a9034e1af020e7d81db0523ee7120b3

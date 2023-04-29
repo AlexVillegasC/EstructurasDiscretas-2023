@@ -1,0 +1,12 @@
+# Dependencias instaladas con npm
+/node_modules
+
+# Archivo de configuración de npm
+npm-debug.log
+
+# Archivos generados por el IDE o editor de código
+.idea
+.vscode
+
+# Archivos de registro
+*.log

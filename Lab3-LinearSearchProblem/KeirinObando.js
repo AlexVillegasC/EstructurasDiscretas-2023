@@ -15,4 +15,4 @@ function buscarLibroPorId(libros, idSolicitado) {
   }
   
   
-  console.log(buscarLibroPorId(libros, 457));
+  console.log(buscarLibroPorId(libros, 105));

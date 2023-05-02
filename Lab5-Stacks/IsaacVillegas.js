@@ -57,29 +57,13 @@ class Stack {
     return stack.isEmpty();
   }
 
-  const html1 = "<html><head><title>Prueba</title></head></html>";  
+  const html1 = "<html><head><span><title>Examen</title></head></span></html>";
   console.log(isHTMLBalanced(html1)); // true
   
-  const html2 = "<html><head><title>Prueba</title></head><body><p>Esto es una prueba</body></html>";
+  const html2 = "<html><div><details>Prueba</details></div><body><p>Esto es una examen</body></html>";
   console.log(isHTMLBalanced(html2)); // false
   
-  const html3 = "<html><head><title>Prueba</title></head><body><p>Esto es una prueba</p></body>";
+  const html3 = "<html><footer><ttitle>Prueba</title></footer><body><p>Esto es el fin de la examen </p></body>";
   console.log(isHTMLBalanced(html3)); // false
-  
-  const html4 = "<html><abbr><title>Hello World</title></abbr></html>";
-  console.log(isHTMLBalanced(html4)); // true
-  
-  const html5 = "<html><section><title>Chale</title></section><nav><p>Este es el malo</p></nav>";
-  console.log(isHTMLBalanced(html4)); // false
 
-  const html6 = "<html><article><title>!Gano la loteria!</title></article></html>";
-  console.log(isHTMLBalanced(html4)); // true
-
-  //Complejidad O (n)
-  
-
-  // Haslo tu mismo!,
-  // investiga sobre otras etiquetas HTML y (abajo) has la prueba con 3 más, haz ambos casos 
-  // 1. Etiquetas estén bien cerradas.
-  // 2. Etiquetas mal cerradas.
-  // 3. Escribe la complejidad del algoritmo isHTMLBalanced para el peor de los casos. 
+  //Lo complejo del algoritmo suponiendo que es el peor de los casos es cuyo algoritmo sea O(n^2)

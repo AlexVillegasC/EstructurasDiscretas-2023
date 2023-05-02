@@ -2,7 +2,6 @@
  * Complejidad Temporal ->O(1)* 
  * Complejidad Espacial ->O(n)* 
  */
-
 function linearSearch(arreglo, clave) {
     for(let indice= 0; indice < arreglo.length; indice++){
     if (arreglo[indice] === clave){

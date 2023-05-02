@@ -57,7 +57,8 @@ class Stack {
     return stack.isEmpty();
   }
 
-  const html1 = "<html><head><title>Prueba</title></head></html>";  
+
+  const html1 = "<html><head><title>Prueba</title></head></html>";
   console.log(isHTMLBalanced(html1)); // true
   
   const html2 = "<html><head><title>Prueba</title></head><body><p>Esto es una prueba</body></html>";
@@ -67,8 +68,25 @@ class Stack {
   console.log(isHTMLBalanced(html3)); // false
   
 
+  //////////////////////////////////////
+
+
+ const html4 = "<html><head><title>Test</title></head><body><h1>Prueba</h1></body></html>";
+ console.log(isHTMLBalanced(html4)); //true
+
+ const html5 = "<ul><li>Prueba</li><li>Prueba</li><ul>";
+ console.log(isHTMLBalanced(html5)); // false
+
+ const html6 = "<div><h1>title</h1><p>Prueba<p><div>";
+ console.log(isHTMLBalanced(html6)); // false
+
+
   // Haslo tu mismo!,
   // investiga sobre otras etiquetas HTML y (abajo) has la prueba con 3 más, haz ambos casos 
   // 1. Etiquetas estén bien cerradas.
   // 2. Etiquetas mal cerradas.
   // 3. Escribe la complejidad del algoritmo isHTMLBalanced para el peor de los casos. 
+  
+  
+
+  /////////// Complejidad 0(N)

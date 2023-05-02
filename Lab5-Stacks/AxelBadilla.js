@@ -66,6 +66,16 @@ class Stack {
   const html3 = "<html><head><title>Prueba</title></head><body><p>Esto es una prueba</p></body>";
   console.log(isHTMLBalanced(html3)); // false
   
+  const html4 = "<html><strong><title>Hoy es Sábado</title></strong></html>";
+  console.log(isHTMLBalanced(html4)); // true
+
+  const html5 = "<html><span><title>Ayer fue Viernes</title></span></html>";
+  console.log(isHTMLBalanced(html5)); // true
+
+  const html6 = "<html><div><title>Prueba</title></head><div><p>Esto es una prueba</div></html>";
+  console.log(isHTMLBalanced(html6)); // false
+
+  // complejidad O(n)
 
   // Haslo tu mismo!,
   // investiga sobre otras etiquetas HTML y (abajo) has la prueba con 3 más, haz ambos casos 

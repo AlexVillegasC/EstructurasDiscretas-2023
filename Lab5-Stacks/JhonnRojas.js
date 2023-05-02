@@ -21,7 +21,7 @@ class Stack {
   
     // Recorre cada carácter de la cadena HTML
     for (let i = 0; i < html.length; i++) {
-      const char = html[i];5
+      const char = html[i];
   
       // Si el carácter es una etiqueta de apertura, agrégala a la pila
       if (char === "<" && html[i + 1] !== "/") 
@@ -57,8 +57,8 @@ class Stack {
     return stack.isEmpty();
   }
 
-  const html1 = "<html><head><title>Prueba</title></head></html>";  
-  console.log(isHTMLBalanced(html1)); // true
+  const html1 = "<html><head><title>Prueba</title></head></html>";
+  console.log(isHTMLBalanced(html1)); // true 
   
   const html2 = "<html><head><title>Prueba</title></head><body><p>Esto es una prueba</body></html>";
   console.log(isHTMLBalanced(html2)); // false
@@ -66,17 +66,14 @@ class Stack {
   const html3 = "<html><head><title>Prueba</title></head><body><p>Esto es una prueba</p></body>";
   console.log(isHTMLBalanced(html3)); // false
   
-  const html4 = "<html><abbr><title>Hello World</title></abbr></html>";
-  console.log(isHTMLBalanced(html4)); // true
+  const hmtl4 = "<html><head><title>juego<title><body>"
+  console.log(isHTMLBalanced(hmtl4)); //false
   
-  const html5 = "<html><section><title>Chale</title></section><nav><p>Este es el malo</p></nav>";
-  console.log(isHTMLBalanced(html4)); // false
+  const html5 = "<html><section><title>¡tienda de libros!</title></section><html>";
+  console.log(isHTMLBalanced(html5)); //true
 
-  const html6 = "<html><article><title>!Gano la loteria!</title></article></html>";
-  console.log(isHTMLBalanced(html4)); // true
-
-  //Complejidad O (n)
-  
+  const html6 = "<!DOCTYPE><html><body><nav>¡mejenga!<nav><body><html>";
+  console.log (isHTMLBalanced(html6)); //false
 
   // Haslo tu mismo!,
   // investiga sobre otras etiquetas HTML y (abajo) has la prueba con 3 más, haz ambos casos 

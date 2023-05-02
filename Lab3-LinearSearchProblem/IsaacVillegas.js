@@ -1,6 +1,4 @@
 
-
-
 const libros = [
     { id: 105, titulo: "El principito" },
     { id: 210, titulo: "Cien años de soledad" },
@@ -17,4 +15,6 @@ const libros = [
     }
     return "Lo siento, el libro solicitado no está disponible en la tienda.";
   }
-  console.log(buscarLibroPorId(libros, 457));
+
+  console.log(buscarLibroPorId(libros, 457));
+

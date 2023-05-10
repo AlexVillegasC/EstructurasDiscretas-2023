@@ -1,24 +1,21 @@
-function bubbleSort(arr) {
-    var i, j;
-    var len = arr.length;
-    var isSwapped = false;
-    for (i = 0; i < len; i++) {
-        isSwapped = false;
-        for (j = 0; j < len; j++) {
-            if (arr[j] > arr[j + 1]) {
-                var temp = arr[j]
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-                isSwapped = true;
-            }
-        }
-        if (!isSwapped) {
-            break;
-        }
-    }
-    console.log(arr)
-} 
-var arr = [34, 12, 45, 25, 18, 9];
-bubbleSort(arr)
+
 
 //escenario2
+function bubleSort(arr) {
+    var len = arr.length; 
+    for (var i = 0; i < len; i++) {
+     for (var j = 0; j < len - i - 1;j++) {
+      if (arr[j] > arr[j + 1]) {
+        var temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+     }
+    } 
+    return arr;
+  }
+  
+  var arr= [94, 56, 90, 13, 22, 61];
+  var sortedArr = bubleSort(arr);
+  console.log(sortedArr);
+  //la lista se ordena de forma ascendente

@@ -1,5 +1,2 @@
-<JavaScript>
-
-
-
-<\javascript>
+var home
+var test 

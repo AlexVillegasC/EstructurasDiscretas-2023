@@ -16,10 +16,10 @@ Aquí se encuentra la lista de libros que se encuentran en la tienda:
 
 ```javascript
 const libros = [
-    {id: 105, titulo: "El principito"},
+    `{id: 105, titulo: "El principito"},
     {id: 210, titulo: "Cien años de soledad"},
     {id: 304, titulo: "Don Quijote de la Mancha"},
     {id: 457, titulo: "1984"},
-    {id: 501, titulo: "Un mundo feliz"},
+    {id: 501, titulo: "Un mundo feliz"},`
     // ...
 ];

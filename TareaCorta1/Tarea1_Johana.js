@@ -1,5 +1,33 @@
-// Definición de la clase Paciente
-class Paciente {
+class Queue {
+  constructor() {
+    this.queue = [];
+  }
+
+  enqueue(element) {
+    this.queue.push(element);
+  }
+
+  dequeue() {
+    if (this.isEmpty()) {
+      return null;
+    }
+    return this.queue.shift();
+  }
+
+  isEmpty() {
+    return this.queue.length === 0;
+  }
+
+  size() {
+    return this.queue.length;
+  }
+
+  clear() {
+    this.queue = [];
+  }
+}
+
+class Patient {
   constructor(nombre, edad, emergencia) {
     this.nombre = nombre;
     this.edad = edad;
@@ -7,56 +35,43 @@ class Paciente {
   }
 }
 
-// Definición de la clase ColaDePacientes
-class ColaDePacientes {
+class HospitalQueue {
   constructor() {
-    this.pacientes = [];
+    this.queue = new Queue();
   }
 
-  // Registrar un nuevo paciente en la cola
   registrarPaciente(nombre, edad, emergencia = false) {
-    const nuevoPaciente = new Paciente(nombre, edad, emergencia);
-    if (emergencia) {
-      this.pacientes.unshift(nuevoPaciente); // Agregar al inicio de la cola
-    } else {
-      this.pacientes.push(nuevoPaciente); // Agregar al final de la cola
+    const paciente = new Patient(nombre, edad, emergencia);
+    this.queue.enqueue(paciente);
+  }
+
+  atenderPaciente() {
+    if (this.queue.isEmpty()) {
+      return null;
     }
+    return this.queue.dequeue();
   }
 
-  // Atender al siguiente paciente
-  atenderSiguientePaciente() {
-    if (this.pacientes.length === 0) {
-      return null; // No hay pacientes en la cola
-    }
-    return this.pacientes.shift(); // Remover y retornar el primer paciente de la cola
+  contarPacientes() {
+    return this.queue.size();
   }
 
-  // Obtener el número de pacientes en la cola
-  obtenerConteoDePacientes() {
-    return this.pacientes.length;
-  }
-
-  // Limpiar la cola de pacientes
   limpiarCola() {
-    this.pacientes = [];
+    this.queue.clear();
   }
 }
 
-// Ejemplo de uso
-const cola = new ColaDePacientes();
+// Ejemplo de uso:
+const hospital = new HospitalQueue();
+hospital.registrarPaciente('Miguel', 35);
+hospital.registrarPaciente('Alicia', 42, true);
+hospital.registrarPaciente('Carlos', 28);
+console.log(hospital.contarPacientes()); // Output: 3
 
-// Registrar nuevos pacientes
-cola.registrarPaciente("Miguel", 30);
-cola.registrarPaciente("Julio", 45);
-cola.registrarPaciente("Ana", 50, true); // Paciente de emergencia
+const paciente1 = hospital.atenderPaciente();
+console.log(paciente1); // Output: { nombre: 'Juan', edad: 35, emergencia: false }
 
-// Obtener el número de pacientes en la cola
-console.log("Conteo de pacientes:", cola.obtenerConteoDePacientes()); // Output: 3
+console.log(hospital.contarPacientes()); // Output: 2
 
-// Atender al siguiente paciente
-const siguientePaciente = cola.atenderSiguientePaciente();
-console.log("Paciente atendido:", siguientePaciente.nombre); // Output: "Juan"
-
-// Limpiar la cola
-cola.limpiarCola();
-console.log("Conteo de pacientes:", cola.obtenerConteoDePacientes()); // Output: 0
+hospital.limpiarCola();
+console.log(hospital.contarPacientes()); // Output: 0

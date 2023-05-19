@@ -7,4 +7,4 @@ function linearSearch(arr, numeroDisfraz){
   return -1
   }
   
-  console.log(linearSearch([30,87,67,54,17,09,26,51,29,65], 30))
+  console.log(linearSearch([30,87,67,54,17,09,26,14,51,29,65], 30))

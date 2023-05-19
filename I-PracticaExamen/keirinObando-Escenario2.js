@@ -18,5 +18,5 @@ function bubbleSort(arr) {
     }
     console.log(arr)
 } 
-var arr = [8,11,37,65,82,98,5,17,38,70,62];
+var arr = [8,11,37,65,3,82,98,5,17,38,70,62];
 bubbleSort(arr)

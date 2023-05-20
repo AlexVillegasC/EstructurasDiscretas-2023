@@ -57,4 +57,8 @@ class Patient {
   
   // Limpiando la cola al final del día
   patientQueue.clean();
+
+
+
+  
   

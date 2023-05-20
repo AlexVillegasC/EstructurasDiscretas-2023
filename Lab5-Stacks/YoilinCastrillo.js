@@ -16,6 +16,8 @@ class Stack {
     }
   }
   
+
+  
   function isHTMLBalanced(html) {
     const stack = new Stack();
   

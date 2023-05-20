@@ -20,30 +20,87 @@ Diseñar e implementar un sistema que maneje esta lógica utilizando una estruct
 Cada paciente puede ser representado como un objeto con las siguientes propiedades:
 - `nombre`: El nombre del paciente.
 - `edad`: La edad del paciente.
-- `emergencia`: Un valor booleano que indica si el paciente tiene una emergencia crítica.
-
-
-```javascript
-class Patient {
-  constructor(name, age, emergency = false) {
-    this.name = name;
-    this.age = age;
-    this.emergency = emergency;
+- `emergencia`: Un valor booleano que indica si el paciente tiene una emergencia crítica.class Patient {
+    constructor(name, age, emergency = false) {
+      this.name = name;
+      this.age = age;
+      this.emergency = emergency;
+    }
   }
+  
+  class PatientQueue {
+    constructor() {
+      this.queue = [];
+    }
+  
+    //agregar paciente a la cola
+    enqueue(person) {
+      if (person.emergency) {
+        this.queue.unshift(person);
+      } else {
+        this.queue.push(person);
+      }
+    }
+  
+    //Elimina un paciente de la cola
+    dequeue() {
+      if (this.isEmpty()) {
+        return "Underflow";
+    }
+    return this.queue.shift();
+  }
+
+  //Mostrar el paciente al frente de la cola
+  front() {
+    if (this.isEmpty()) {
+      return "No elements in Queue";
+    }
+    return this.queue[0];
+  }
+
+  //Mostrar elementos en la cola
+  printQueue() {
+    let elementsInQueue = "";
+    for (let i = 0; i < this.queue.length; i++) {
+      elementsInQueue += this.queue[i].name + ", ";
+    }
+    return elementsInQueue.slice(0, -2);
+  }
+
+  // Mostrar el número de pacientes en la cola
+  count() {
+    return this.queue.length;
+  }
+
+  //Motrar si la cola está vacía
+  isEmpty() {
+    return this.queue.length == 0;
 }
 
-class PatientQueue {
-  constructor() {
-    this.queue = [];
-  }
+//Limpiar cola
+clear() {
+  this.queue = [];
+}
 }
 
 // Creando una nueva cola de pacientes
 let patientQueue = new PatientQueue();
 
-// Añadiendo pacientes a la cola
+// Registrando pacientes en la cola
 patientQueue.enqueue(new Patient("Juan", 30));
+patientQueue.enqueue(new Patient("Alex", 25));
+patientQueue.enqueue(new Patient("Diego", 40, true));
 
-```
+console.log("Pacientes en la cola: "+patientQueue.printQueue());
 
-Debes implementar esta lógica en JavaScript utilizando una clase `PacienteQueue` que se comporte igual que la clase `Queue` que se proporcionó anteriormente. Asegúrate de que tu implementación de comentar bien el código y que se cumplan los requisitos del sistema.
+// Atendiendo pacientes de la cola
+console.log("Paciente al frente de la cola: " + patientQueue.front().name);
+console.log("Atendiendo paciente: " + patientQueue.dequeue().name);
+console.log("Atendiendo paciente: " + patientQueue.dequeue().name);
+
+// Mostrando el número de pacientes restantes en la cola
+console.log("Número de pacientes restantes en la cola: " + patientQueue.count());
+
+// Limpiando la cola
+patientQueue.clear();
+console.log("Número de pacientes restantes en la cola después de limpiarla: " + patientQueue.count());  

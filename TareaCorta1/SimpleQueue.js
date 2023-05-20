@@ -9,49 +9,33 @@ class Queue
     // Agrega un elemento a la cola
     enqueue(element)
     {        
-        
+        this.items.push(element);
     }
 
     // Elimina elementos de la cola.
     dequeue()
     {
-        
+        return this.items.shift();
     }
 
     // Mostrar el elemento al frente de la cola
     front()
     {
-
+       return this.items[0];
     }
 
     // Mostrar elements en la cola
     printQueue()
     {
-
+    
     }
-
+        
     // Muestra si la cola está vacía o no
     isEmpty(){
-
     }
 
     // Limpiar la cola.
     clear()
     {
-
     }
 }
-
-// Crear una nueva cola.
-let queue = new Queue();
-
-console.log(queue.isEmpty()); // true
-
-queue.enqueue("1");
-queue.enqueue("2");
-queue.enqueue("3");
-
-console.log(queue.printQueue()); // 1 2 3
-console.log(queue.front()); // 1
-console.log(queue.dequeue()); // 1
-console.log(queue.front()); // 2

@@ -15,4 +15,4 @@ const libros = [
     return "Lo siento, el libro solicitado no está disponible en la tienda.";
   }
   
-  console.log(buscarLibroPorId(libros, idSolicitado));
+  console.log(buscarLibroPorId(libros, 105));

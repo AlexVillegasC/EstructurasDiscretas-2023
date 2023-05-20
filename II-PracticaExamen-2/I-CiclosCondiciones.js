@@ -2,7 +2,12 @@
 // Grabar un video educativo donde 
     //   Se explica linea por linea.
     //   Se usa el Debugger como herramienta principal.
+    
 // Compartir el video por un link (Youtube, Drive, etc).
+
+
+
+
 
 // Explicar que son Variables (var, let, const,...)
 

@@ -4,6 +4,10 @@
     //   Se usa el Debugger como herramienta principal.
 // Compartir el video por un link (Youtube, Drive, etc).
 
+
+
+
+
 // Explicar con claridad cada paso.
 const notas = [26.67, 33.33, 46.67, 53.33, 46.67, 53.33, 40.00, 66.67, 66.67, 60.00, 26.67, 66.67, 100.00, 100.00, 13.33, 13.33, 46.67, 53.33, 40.00, 33.33, 33.33, 13.33, 100.00, 100.00, 73.33, 26.66666667, 20.00, 0.00, 13.33, 26.67, 53.33, 46.67, 66.67, 33.33, 26.67, ];
 

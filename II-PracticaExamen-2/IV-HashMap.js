@@ -4,6 +4,13 @@
     //   Se usa el Debugger como herramienta principal.
 // Compartir el video por un link (Youtube, Drive, etc).
 
+
+
+
+
+
+
+
 // Explicar cual es esta estructura de datos y como se comporta.
 let mapa = new Map();
 

@@ -19,8 +19,7 @@ console.log(resultado);
 
 
 
-//
-Ejemplo 2 O(Log N)
+//Ejemplo 2 O(Log N)
 let arregloOrdenado = ['a','b','c','d','f','g','h','i','j','k'];
 let elementoBuscado = 'j';
 let resultado = busquedaBinaria(arregloOrdenado, elementoBuscado);

@@ -17,12 +17,11 @@ console.log(resultado);
 // Ejemplo 2 O(Log N)
 
 let arregloOrdenado = ['a', 'b', 'c', 'd', 'e'];
-let elementoBuscado = 'a';
+let elementoBuscado = 'c';
 let resultado = busquedaBinaria(arregloOrdenado, elementoBuscado);
 
 if (resultado !== null) {
     console.log("La letra " + elementoBuscado + "se encuentra en la posición" + resultado);
-    console.log(resultado);
 } else {
     console.log("La letra" + elementoBuscado + "no se encientra");
 }

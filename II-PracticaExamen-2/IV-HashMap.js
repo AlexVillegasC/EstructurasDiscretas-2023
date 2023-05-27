@@ -28,7 +28,7 @@ mapa.forEach((valor, clave) => {
 
 
 // Explicar el siguiente ejemplo:
-let arr = [1, 2, 3, 1, 2, 3, 4, 5, 6, 4, 5, 6, 7, 8, 9, 7, 8, 9];
+let arr = [1, 2, 3, 1, 2, 3, 4, 5, 6, 4, 5, 6, 7, 8, 9, 7, 7,8, 9];
 let duplicados = contarDuplicados(arr);
 
 // Imprimir los números duplicados y su cantidad

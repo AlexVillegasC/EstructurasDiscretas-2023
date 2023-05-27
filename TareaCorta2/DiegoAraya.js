@@ -19,9 +19,9 @@ let elementoBuscado = 'j';
 let resultado = busquedaBinaria(arregloOrdenado, elementoBuscado);
 
 if (resultado !== null){
-    console.log("El numero " + elementoBuscado + " se encuentra en la");
+    console.log("El numero " + elementoBuscado + " se encuentra en la posicion" + resultado);
 } else{
-    console.log("El numero "+ elementoBuscado + "no se encuentra");
+    console.log("El numero "+ elementoBuscado + "no se encuentra la lista"+ arregloOrdenado);
 }
 
 function busquedaBinaria(arregloOrdenado, elementoBuscado){

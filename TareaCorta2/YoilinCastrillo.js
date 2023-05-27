@@ -21,9 +21,10 @@ let elementoBuscado = 'a';
 let resultado = busquedaBinaria(arregloOrdenado, elementoBuscado);
 
 if (resultado !== null) {
-    console.log("El numero " + elementoBuscado + "se encuentra en la posición");
+    console.log("La letra " + elementoBuscado + "se encuentra en la posición" + resultado);
+    console.log(resultado);
 } else {
-    console.log("El numero" + elementoBuscado + "no se encientra");
+    console.log("La letra" + elementoBuscado + "no se encientra");
 }
 
 function busquedaBinaria(arregloOrdenado, elementoBuscado) {

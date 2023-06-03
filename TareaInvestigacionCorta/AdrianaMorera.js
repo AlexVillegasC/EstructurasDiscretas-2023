@@ -1,5 +1,38 @@
-def factorial(n, acc=1):
-    if n == 0:
-        return acc
-    else:
-        return factorial(n - 1, acc * n)
+var res =sumaRecursividad(3);
+console.log(res);
+
+
+function sumaRecursiva(n){
+     if (n<0){
+        return 0;
+     } else {
+        return n + sumaRecursiva(n-1);
+     }
+}
+
+
+function SumarNumerosDesdeCero(n)
+{
+    let counter = 0;
+    for(let i = 0; i <= n; i++)
+    {
+        counter = counter + i;
+    }
+
+    return counter;
+}
+
+console.log(SumarNumerosDesdeCero(100));
+
+function SumaGaussiana(n) {
+    return (n * (n + 1)) / 2;
+}
+
+console.log(SumaGaussiana(100));
+
+function SumaGaussiana(n) // es O(1)
+{ 
+    return (n * (n + 1)) / 2;
+}
+
+console.log(SumaGaussiana(100));

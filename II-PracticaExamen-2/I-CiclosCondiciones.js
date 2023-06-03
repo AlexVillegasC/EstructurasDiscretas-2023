@@ -49,4 +49,4 @@ function renombrar() {
     }
 }
 
-numerosPares();
+renombrar();

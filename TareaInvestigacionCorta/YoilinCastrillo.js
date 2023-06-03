@@ -77,22 +77,22 @@ function fibonaci (n){
 
 // Funcion Iterativa 
 
-function fibonaciIterativo(n) {
-    if (n <= 0) {
-      return 0;
-    }
+// function fibonaciIterativo(n) {
+//     if (n <= 0) {
+//       return 0;
+//     }
   
-    let fib = [0,1];
+//     let fib = [0,1];
   
-    for (let i = 2; i <= n; i++) {
-      let temp = a + b;
-      a = b;
-      b = temp;
-    }
+//     for (let i = 2; i <= n; i++) {
+//       let temp = a + b;
+//       a = b;
+//       b = temp;
+//     }
   
-    return b;
-  }
+//     return b;
+//   }
   
-  var res = fibonaciIterativo(3);
-  console.log(res);
+//   var res = fibonaciIterativo(3);
+//   console.log(res);
   

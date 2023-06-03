@@ -11,7 +11,6 @@ function sumaRecursiva(n){
     }
 }
 
-
 //Funcion ITERATIVA
 
 var res = sumaIterativa(3);

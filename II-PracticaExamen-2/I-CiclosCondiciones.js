@@ -49,6 +49,5 @@ function renombrar() {
     }
 }
 
-
-
 numerosPares();
+

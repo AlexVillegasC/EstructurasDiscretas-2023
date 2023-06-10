@@ -49,4 +49,63 @@ function renombrar() {
     }
 }
 
-numerosPares();
+renombrar();
+
+
+// Ejemplo de código utilizando if, else if y else.
+let numero = 42;
+
+if(numero > 0) {
+    console.log("El numero es positivo");
+} else if(numero < 0) {
+    console.log("El numero es negativo");
+} else {
+    console.log("El numero es cero");
+}
+
+
+
+//Ejemplo de código utilizando switch.
+let dia = 2;
+let diaSemana;
+
+switch (dia) {
+  case 1:
+    diaSemana = "Lunes";
+    break;
+  case 2:
+    diaSemana = "Martes";
+    break;
+  case 3:
+    diaSemana = "Miércoles";
+    break;
+  case 4:
+    diaSemana = "Jueves";
+    break;
+  case 5:
+    diaSemana = "Viernes";
+    break;
+  case 6:
+    diaSemana = "Sábado";
+    break;
+  case 7:
+    diaSemana = "Domingo";
+    break;
+  default:
+    diaSemana = "Día inválido";
+    break;
+}
+
+console.log("El día seleccionado es: " + diaSemana);
+
+
+
+//Ejemplo de código utilizando while.
+console.log("Bucle 'while':");
+let j = 1;
+while (j <= 5) {
+    console.log(j);
+    j++;
+}
+
+

@@ -1,0 +1,28 @@
+function bubbleSort(sizes) {
+    const n = sizes.length;
+    for (let i = 0; i < n; i++) {
+      for (let j = 0; j < n - i - 1; j++) {
+        if (sizes[j] > sizes[j + 1]) {
+          const temp = sizes[j];
+          sizes[j] = sizes[j + 1];
+          sizes[j + 1] = temp;
+        }
+      }
+    }
+    return sizes;
+  }
+
+  let balloonSizes1 = [34, 12, 45, 25, 18, 9];
+  console.log(bubbleSort(balloonSizes1)); // [9, 12, 18, 25, 34, 45] Este retor la solulicitud del cliente
+  
+  let balloonSizes2 = [5, 10, 2, 6, 3];
+  console.log(bubbleSort(balloonSizes2)); // [2, 3, 5, 6, 10]
+  
+  let balloonSizes3 = [100, 50, 75, 25, 10];
+  console.log(bubbleSort(balloonSizes3)); // [10, 25, 50, 75, 100]
+
+
+
+  
+  
+  

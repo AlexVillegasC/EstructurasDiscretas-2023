@@ -1,0 +1,31 @@
+function linearSearch(disguiseNumbers, objetivoNumber) {
+    for (let i = 0; i < disguiseNumbers.length; i++) {
+      if (disguiseNumbers[i] === objetivoNumber) {
+        return i;
+      }
+    }
+    return -1;
+  }
+
+    const invitados = [23, 5, 47, 18, 32, 10];
+    const objetivo = 18;
+  
+     const result = linearSearch(invitados, objetivo);
+  
+     console.log(result); // Output: 3
+    
+    const invitados1 = [23, 5, 47, 18, 32, 10];
+    const objetivo1 = 18;
+    console.log(linearSearch(invitados1, objetivo1)); 
+
+    const invitados2 = [10, 20, 30, 40, 50];
+    const objetivo2 = 50;
+    console.log(linearSearch(invitados2, objetivo2)); 4
+
+    const invitados3 = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
+    const objetivo3 = 7;
+    console.log(linearSearch(invitados3, objetivo3)); 
+
+    const invitados4 = [2, 4, 6, 8, 10];
+    const objetivo4 = 1;
+    console.log(linearSearch(invitados4, objetivo4)); 
